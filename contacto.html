@@ -14,17 +14,54 @@
         <nav> Agregar botón de navegación </nav>
     </header>
 
-<nav>
-    <a href="Index.html"> Link a sección Inicio </a>
-    <a href="proyectos.html"> Link a sección Proyectos</a>
-    <a href="contacto.html"> Link a sección Contacto</a>
-</nav>
-   
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor sed, curae volutpat maecenas eros torquent himenaeos phasellus et, gravida curabitur etiam pulvinar suscipit non semper proin. Vestibulum venenatis massa scelerisque accumsan integer vehicula parturient, ridiculus facilisis nullam ultrices primis aliquet cursus pellentesque, imperdiet rhoncus suspendisse litora orci risus. Sollicitudin torquent montes nulla consequat a etiam, aliquet inceptos ut netus non fames, congue nullam eleifend elementum mi.
-</p>
+    <main>
+        <form action="/procesar" method="post">
+            <fieldset>
+                <legend> Formulario de contacto </legend>
 
-<a href="mailto:erick360_nod@hotmail.com">Contactanos vía email</a>
-<a href="https://github.com/erick360nod/mi-portafolio-Erick-Estrada">Encuentra mi portafolio también en github</a>
+                <label for="nombre"> Nombre:</label> <input type="text" id="nombre" name="nombre"
+                    placeholder="Escriba su nombre completo" maxlength="40" required>
+                <br>
+                <label for="correo"> Dirección de correo</label>
+                <input type="email" name="correo" id="correo" required>
+                <br>
+                <label for="asunto"> asunto</label>
+                <select name="asunto" id="asunto">
+                    <option value="0"></option>
+                    <option value="1">Oferta de empleo</option>
+                    <option value="2">Solicitud de proyecto</option>
+                    <option value="3" selected>otros</option>
+                </select>
+                <label for="terminos">Acepto la politica de confidencialidad</label>
+                <input type="checkbox" name="terminos" id="terminos">
+
+                <label for="mensaje">Comentarios</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+                <button type="submit">Enviar datos</button>
+                <button type="reset"> Limpiar formulario</button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <nav>
+        <a href="Index.html"> Link a sección Inicio </a>
+        <a href="proyectos.html"> Link a sección Proyectos</a>
+        <a href="contacto.html"> Link a sección Contacto</a>
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor sed, curae volutpat maecenas eros torquent
+        himenaeos phasellus et, gravida curabitur etiam pulvinar suscipit non semper proin. Vestibulum venenatis massa
+        scelerisque accumsan integer vehicula parturient, ridiculus facilisis nullam ultrices primis aliquet cursus
+        pellentesque, imperdiet rhoncus suspendisse litora orci risus. Sollicitudin torquent montes nulla consequat a
+        etiam, aliquet inceptos ut netus non fames, congue nullam eleifend elementum mi.
+    </p>
+
+    <a href="mailto:erick360_nod@hotmail.com">Contactanos vía email</a>
+    <a href="https://github.com/erick360nod/mi-portafolio-Erick-Estrada">Encuentra mi portafolio también en github</a>
     <footer>
         &copy; 2026 - Erick Estrada - Santa Ana
     </footer>
