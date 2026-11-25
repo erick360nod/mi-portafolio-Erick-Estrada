@@ -8,64 +8,64 @@
     <link rel="stylesheet" href="css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
 
-  <nav>
-    <a href="index.html">
-        <button>Inicio</button>
-    </a>
+    <nav>
+        <a href="index.html">
+            <button>Inicio</button>
+        </a>
 
-    <a href="proyectos.html">
-        <button>Proyectos</button>
-    </a>
+        <a href="proyectos.html">
+            <button>Proyectos</button>
+        </a>
 
-    <a href="contacto.html">
-        <button>Contacto</button>
-    </a>
-</nav>
+        <a href="contacto.html">
+            <button>Contacto</button>
+        </a>
+    </nav>
 </head>
 
 <body>
     <header>
         <!--Acá inicia el ejercicio con mi nombre como Encabezado-->
         <h1> Erick Alexander Estrada Escobar</h1>
-    
+
     </header>
+    <div class="contenedor">
+        <main>
+            <form action="/procesar" method="post">
+                <fieldset>
+                    <legend> Formulario de contacto </legend>
 
-    <main>
-        <form action="/procesar" method="post">
-            <fieldset>
-                <legend> Formulario de contacto </legend>
+                    <label for="nombre"> Nombre:</label> <input type="text" id="nombre" name="nombre"
+                        placeholder="Escriba su nombre completo" maxlength="40" required>
+                    <br>
+                    <label for="correo"> Dirección de correo</label>
+                    <input type="email" name="correo" id="correo" required>
+                    <br>
+                    <label for="asunto"> asunto</label>
+                    <select name="asunto" id="asunto">
+                        <option value="0"></option>
+                        <option value="1">Oferta de empleo</option>
+                        <option value="2">Solicitud de proyecto</option>
+                        <option value="3" selected>otros</option>
+                    </select>
+                    <label for="terminos">Acepto la politica de confidencialidad</label>
+                    <input type="checkbox" name="terminos" id="terminos">
 
-                <label for="nombre"> Nombre:</label> <input type="text" id="nombre" name="nombre"
-                    placeholder="Escriba su nombre completo" maxlength="40" required>
-                <br>
-                <label for="correo"> Dirección de correo</label>
-                <input type="email" name="correo" id="correo" required>
-                <br>
-                <label for="asunto"> asunto</label>
-                <select name="asunto" id="asunto">
-                    <option value="0"></option>
-                    <option value="1">Oferta de empleo</option>
-                    <option value="2">Solicitud de proyecto</option>
-                    <option value="3" selected>otros</option>
-                </select>
-                <label for="terminos">Acepto la politica de confidencialidad</label>
-                <input type="checkbox" name="terminos" id="terminos">
+                    <label for="mensaje">Comentarios</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
-                <label for="mensaje">Comentarios</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <button type="submit">Enviar datos</button>
+                    <button type="reset"> Limpiar formulario</button>
 
-                <button type="submit">Enviar datos</button>
-                <button type="reset"> Limpiar formulario</button>
+                </fieldset>
 
-            </fieldset>
+            </form>
 
-        </form>
-
-    </main>
-
+        </main>
+    </div>
 
     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor sed, curae volutpat maecenas eros torquent
         himenaeos phasellus et, gravida curabitur etiam pulvinar suscipit non semper proin. Vestibulum venenatis massa

@@ -1,3 +1,8 @@
+/* Primeras reglas de tu archivo */ *, *::before, *::after { box-sizing: border-box; } 
+body { margin: 0; } 
+img { max-width: 100%; height: auto; }   /* Valores abreviados */ margin: 16px;            /* los 4 lados */ margin: 16px 32px;       /* arriba-abajo | izquierda-derecha */ margin: 8px 16px 24px 0; /* arriba | derecha | abajo | izquierda */ 
+
+
 :root {
 --color-primario: #f3f3f3;
 --color-secundario: #eadd29;
@@ -44,3 +49,22 @@ button:hover {
     border-left: 5px solid #ffc107;
     border-radius: 5px;
 }
+
+
+.contenedor {   width: 90%;   max-width: 1100px;   /* nunca más ancho que esto */   
+    margin: 0 auto;      /* centrado horizontal */ }   
+.tarjeta {   background: #FFFFFF;   
+    padding: 1.5rem;   
+    border: 1px solid #D8E2F5;   
+    border-radius: 12px;   
+    margin-bottom: 1.5rem;   
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }  
+
+.boton {   display: inline-block;   
+    padding: 0.75rem 1.5rem;   
+    background: var(--secundario);   
+    color: #FFFFFF;   
+    border-radius: 8px;   
+    font-weight: 600; }
+     
+.boton:hover { background: var(--primario); }
